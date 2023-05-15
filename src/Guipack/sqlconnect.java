@@ -12,6 +12,7 @@ public static Connection getConnection() {
     return conn;
     }catch (SQLException e) {
     e.printStackTrace();
+    System.out.println("erro de conexão com o banco de dados");
     return null;
     }
   }

@@ -70,8 +70,8 @@ public class Crud {
                     +"Tipo: "+Form_tipo.getText()+ "\nDescrição: " + Form_desc.getText() + "\nQuantidade: " +Form_qtde.getText() + "\nPreço " + Form_Preco.getText());
             if (resposta == JOptionPane.YES_OPTION) {
                 try {
-                    int idcheck = Integer.parseInt(Form_id.getText());
-                    if (idcheck >6 || idcheck <0){
+                    int tipocheck = Integer.parseInt(Form_tipo.getText());
+                    if (tipocheck >6 || tipocheck <0){
                         JOptionPane.showMessageDialog(null,"Tipo Invalido!");
                         return;}
                     PreparedStatement stm = conn.prepareStatement(sql);
@@ -97,8 +97,8 @@ public class Crud {
                     +"Tipo: "+Form_tipo.getText()+ "\nDescrição: " + Form_desc.getText() + "\nQuantidade: " +Form_qtde.getText() + "\nPreço " + Form_Preco.getText());
             if (resposta == JOptionPane.YES_OPTION) {
                 try {
-                    int idcheck = Integer.parseInt(Form_id.getText());
-                    if (idcheck >6 || idcheck <0){
+                    int tipocheck = Integer.parseInt(Form_tipo.getText());
+                    if (tipocheck >6 || tipocheck <0){
                         JOptionPane.showMessageDialog(null,"Tipo Invalido!");
                         return;}
                     PreparedStatement stm = conn.prepareStatement(sql);
